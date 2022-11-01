@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin du css reset */
+.container{
+    height: 100vh;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: 2fr 2fr 4fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "courrier courrier calendrier photos un deux"
+    "courrier courrier calendrier photos trois quatre"
+    "skype contacts bourse explorer aide aide"
+    "liste_lecture drive . cartes sante sante"
+    "bureau bureau . actu actu actu";
+}
+.courrier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(100, 92, 92);
+    grid-area: courrier;
+}
+.calendrier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    grid-area: calendrier;
+}
+.photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    grid-area: photos;
+}
+.un{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    grid-area: un;
+}
+.deux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    grid-area: deux;
+}
+.trois{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    grid-area: trois;
+}
+.quatre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    grid-area: quatre;
+}
+.skype{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    grid-area: skype;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    grid-area: contacts;
+}
+.bourse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    grid-area: bourse;
+}
+.explorer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    grid-area: explorer;
+}
+.aide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    grid-area: aide;
+}
+.liste_lecture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    grid-area: liste_lecture;
+}
+.drive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    grid-area: drive;
+}
+.cartes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    grid-area: cartes;
+}
+.sante{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    grid-area: sante;
+}
+.bureau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    grid-area: bureau;
+}
+.actu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    grid-area: actu;
+}
